@@ -14,7 +14,7 @@ const landingPage =(props) =>{
         <div className={landingPageClass.join(" ")}>
         <div data-aos="zoom-in" className="d-flex flex-column container justify-content-center" style={{color: "white",height:"500px",width:"80%"}}>
         <div className={classes.WelcomeNote}>
-        Welcome to Ourgoalplan
+        Welcome to Redux form samples
         </div>
 
         <div>
