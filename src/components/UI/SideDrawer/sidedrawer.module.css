@@ -1,0 +1,37 @@
+.SideDrawer{
+    position: fixed;
+    width: 270px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background: linear-gradient(
+        to right,
+      rgba(219,61,68, 0.9),
+      rgba(219,61,68, 0.5)
+    );
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    transition: transform 0.3s ease-out;
+}
+
+
+.Close{
+
+    transform: translateX(-100%);
+}
+
+.Open{
+
+    transform: translateX(0);
+}
+
+.NavItems{
+    color: #fff;
+}

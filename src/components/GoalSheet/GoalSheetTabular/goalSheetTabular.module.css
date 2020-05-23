@@ -1,0 +1,13 @@
+.UpdateGoalBtn{
+    background-color: rgb(219,61,68);
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: 0!important;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   font-size: medium;
+   font-weight: 700;
+   margin-bottom: 3px;
+}

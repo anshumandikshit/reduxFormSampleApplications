@@ -1,0 +1,50 @@
+.DatePickerBox{
+    
+    justify-content: right;
+}
+
+.GoalSheetContainer{
+    margin: 10px;
+    padding:5px;
+}
+
+
+.DoTodayBtn{
+    background-color: rgb(219,61,68);
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: 0!important;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   font-size: medium;
+   font-weight: 700;
+}
+
+/* .MobileOnly{
+    display: none !important;
+}
+
+.DesktopOnly{
+    display: none !important;
+} */
+
+@media only screen and (max-width: 600px) {
+    
+    .DesktopOnly{
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width : 601px) {
+    
+
+    .MobileOnly{
+        display: none !important;
+    }
+
+    .react-datepicker { font-size: 1em !important }
+
+}

@@ -1,24 +1,30 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Layout from './hoc/Layout/Layout' ;
+import GoalSheet from './containers/GoalSheet/GoalSheet' ;
+import AOS from "aos" ;
+import MainComponent from '../src/containers/mainContainer'
+
+const App=(props)=> {
+  useEffect(() => {
+ 
+    
+    AOS.init({
+      duration:1200,
+      startEvent:'load',
+      once:false,
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+    <Layout>
+    <MainComponent></MainComponent>
+  </Layout>
+
     </div>
   );
 }

@@ -1,0 +1,48 @@
+.LandingPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to left,
+      rgba(219,61,68, 0.6),
+      rgba(219,61,68, 1)
+    );
+    z-index:300 ;
+
+    transition: transform 0.4s ease-out;
+}
+
+.ExploreBtn{
+    margin: 10px;
+    margin-left: 0px;
+    background-color: rgb(219,61,68);
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: 0!important;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   font-size: medium;
+   font-weight: 700;
+   font-size:xx-large;
+   font-weight: 900;
+}
+
+.WelcomeNote{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+.Open{
+
+    transform: translateY(-100%);
+}
+
+.Close{
+
+    transform: translateY(0);
+}
